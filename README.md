@@ -62,3 +62,16 @@ const apiKey = "YOUR_API_KEY";
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`;
 axios.get(`${apiUrl}&appid=${apiKey}`).then(displayWeatherInfo);
 ```
+## Author
+
+- Yassine OUJAMA
+
+## License
+
+This project is licensed under the MIT License - see the *LICENSE* file for details.
+
+## Acknowledgments
+
+- **OpenWeather** for providing the weather data API.
+- **Bootstrap** for the responsive design framework.
+- **Axios** for the HTTP request library.
