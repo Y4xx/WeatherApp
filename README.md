@@ -29,3 +29,36 @@ To run this project, you need a web browser and an internet connection.
 
 ```sh
 git clone https://github.com/Y4xx/meteo-app.git
+```
+1. Navigate to the project directory:
+
+```sh
+    cd meteo-app
+```
+1. Open the index.html file in your web browser.
+
+### Usage
+
+- Enter the name of a city in the search bar.
+- Click the "Search" button or press Enter.
+- The current weather information for the searched city will be displayed.
+
+### Code Overview
+
+#### HTML
+The HTML structure includes a search form for the city, a card to display the current weather information, and a section for the weekly forecast.
+
+#### CSS
+Bootstrap is used for styling to ensure the app is responsive and looks good on various devices.
+
+#### JavaScript
+index.js: Contains the main functionality of the app, including fetching weather data from the OpenWeather API and updating the DOM elements with the received data.
+#### API
+
+The app uses the OpenWeather API to fetch weather data. You need an API key to make requests.
+```sh
+
+const apiKey = "YOUR_API_KEY";
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`;
+axios.get(`${apiUrl}&appid=${apiKey}`).then(displayWeatherInfo);
+```
